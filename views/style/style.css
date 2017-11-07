@@ -1,0 +1,143 @@
+/****** Styling Navbar*********/
+.navbar {
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: white;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: black !important;
+}
+/*****Styling backgroud ************/
+
+body { 
+  background: url("../img/maxresdefault.jpg") repeat-x; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ background-size: cover;
+    -webkit-animation: loader 16s steps(2000) infinite;
+    -moz-animation: loader 16s steps(2000) infinite;
+    -ms-animation: loader 16s steps(2000) infinite;
+    -o-animation: loader 16s steps(2000) infinite;
+    animation: loader 16s steps(2000) infinite;
+    overflow-x:hidden;
+}
+@-webkit-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -160px 0;
+  }
+}
+@-moz-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -160px 0;
+  }
+}
+@-ms-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -160px 0;
+  }
+}
+@-o-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -160px 0;
+  }
+}
+@keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1600px 0;
+  }
+}
+
+/*** Home page styling***/
+.profile-box{
+
+    height: 450px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 40px;
+}
+.row{
+    padding: 50px;
+}
+.social {
+  padding-top: 350px;
+        padding-right: 80px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px white;
+  background-clip: content-box;
+  padding: 5px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-shadow:
+    0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 50px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+ 
+  color: white;
+  margin-left: -5px;
+  transform: translateX(1px) rotate(360deg);
+}
+.social .link.github {
+  background-color:black;
+  color: white;
+}
+#particles-js{
+
+  flex-direction: column;
+  display: flex;
+
+  height: 100%;
+  width:100%;
+}
+/*** Home page styling ends here***/
