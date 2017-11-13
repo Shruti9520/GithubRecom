@@ -18,7 +18,8 @@ myApp.config(['$stateProvider', '$urlRouterProvider','$locationProvider',functio
   var loginState = {
     name: 'login',
     url: '/login',
-    templateUrl: 'views/login.html'
+    templateUrl: 'views/login.html',
+    controller: 'LoginCtrl'
   }
 
   var homeState = {
@@ -58,8 +59,8 @@ myApp.config(['$stateProvider', '$urlRouterProvider','$locationProvider',functio
 
   }]);
 
-/********* Directive for login apage*************/
-myApp.controller('Controller', ['$scope', '$auth', '$location', 'ngNotify', function($scope, $auth, $location, ngNotify) {
+/********* Controller for login apage*************/
+myApp.controller('LoginCtrl', ['$scope', '$auth', '$location', function($scope, $auth, $location) {
     $scope.authen = function() {
       	
       		$auth.authenticate('github')
@@ -72,8 +73,4 @@ myApp.controller('Controller', ['$scope', '$auth', '$location', 'ngNotify', func
 
 		  };
   }])
-  .directive('signInWithGithubButton', function() {
-    return {
-      template: '<button class="btn btn-block btn-login-github waves-effect waves-light" alt="sign in" ng-click="authen()">Sign in with github</button>'
-    };
-  });
+  
