@@ -1,0 +1,35 @@
+{
+  "name": "githubrecom",
+  "version": "1.0.0",
+  "description": "github repository recommender system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shruti9520/GithubRecom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shruti9520/GithubRecom/issues"
+  },
+  "homepage": "https://github.com/Shruti9520/GithubRecom#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cor": "0.0.0",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jwt-simple": "^0.5.1",
+    "morgan": "^1.9.0",
+    "nedb": "^1.8.0",
+    "octonode": "^0.9.1",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "broccoli-sass": "^0.7.0"
+  }
+}
